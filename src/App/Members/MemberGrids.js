@@ -3,7 +3,14 @@ import './MemberGrids.css';
 
 class MemberGrids extends React.PureComponent {
   render() {
-    return <p className="MembersInfoTitle">学员列表</p>;
+    return (
+      <div>
+        <p className="MembersInfoTitle">学员列表</p>
+        <button className="AddNewMemberButton" type="button">
+          +添加学员
+        </button>
+      </div>
+    );
   }
 }
 

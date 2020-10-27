@@ -4,15 +4,22 @@ import './App.scss';
 import MemberGrids from './Members/MemberGrids';
 import Member from './Members/Member';
 
+import GroupGrids from './GroupDivision/GroupGrids';
+import Group from './GroupDivision/Group';
+
 class App extends Component {
   render() {
     return (
       <div data-testid="app" className="App">
         <div>
-          {/* eslint-disable-next-line react/button-has-type */}
-          <button className="DivisionButton">分组学员</button>
+          <button className="DivisionButton" type="button">
+            分组学员
+          </button>
+          <GroupGrids className="GroupGrids">
+            <Group />
+          </GroupGrids>
           <MemberGrids className="MemberGrids">
-            <Member className="Member">member</Member>
+            <Member className="Member" />
           </MemberGrids>
         </div>
       </div>

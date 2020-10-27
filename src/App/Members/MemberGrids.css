@@ -5,5 +5,15 @@
 .MembersInfoTitle {
   font-size: 15pt;
   font-weight: bold;
-  margin-bottom: 50pt;
+  margin-left: 20pt;
+}
+
+.AddNewMemberButton {
+  background: none;
+  border-color: #929aab;
+  float: right;
+  font-size: 13px;
+  height: 40px;
+  width: 8%;
+  margin-right: 20px;
 }
